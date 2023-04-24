@@ -1,0 +1,94 @@
+<html>
+    
+    <link rel="shortcut icon" type="image/gif" href="cute-s1.gif">
+<head>
+    <body>
+        
+        <div class=box>
+<h2 style="--i:0"> Line-up Coming soon</h2>    
+            <h2 style="--i:0"> Line-up Coming soon</h2> 
+            <h2 style="--i:1"> Line-up Coming soon</h2> 
+            <h2 style="--i:2"> Line-up Coming soon</h2> 
+            <h2 style="--i:3"> Line-up Coming soon</h2> 
+            <h2 style="--i:4"> Line-up Coming soon</h2> 
+            <h2 style="--i:5"> Line-up Coming soon</h2> 
+            <h2 style="--i:6"> Line-up Coming soon</h2> 
+            <h2 style="--i:7"> Line-up Coming soon</h2> 
+            <h2 style="--i:8"> Line-up Coming soon</h2> 
+            <h2 style="--i:9"> Line-up Coming soon</h2> 
+        </div>
+         <p class="subtitle"> <a href="index.html"> home</a> </p>
+
+        <style>
+            
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: "pusabregular"
+            }
+         Body   {
+                display: flex;
+                justify-content: center;
+             min-height: 100vh;
+             background: black; 
+            }
+            
+                       @font-face {
+    font-family: "pusabregular";
+    src: url('PUSAB___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+            
+            h2{
+                font-family: "pusabregular";
+            }
+            .box {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .box h2 {
+                
+                font-size: 2.25em;
+                -webkit-text-stroke: 1px #76D0FF;
+                color: transparent;
+                line-height: 1rem;
+                animation: animate 2.5s linear infinite;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                animation-delay: calc(var(--i)*-0.25s)
+            }
+            
+            @keyframes animate
+            {
+                0%,10%
+                {
+                    color: #76D0FF;
+                    filter: hue-rotate(0deg);
+                    
+                }
+                10.000001%
+                {
+                    color: transparent;
+                    
+                }
+                100%
+                {
+                    color: transparent;
+                    filter: hue-rotate(720deg);
+                }
+                
+            }
+        
+        
+        </style>
+        
+    
+    </body>
+    </head>
+
+</html>
