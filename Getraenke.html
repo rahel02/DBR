@@ -1,11 +1,16 @@
 <body>
 
-    <link rel="shortcut icon" type="image/gif" href="cute-s1.gif">
+    <link rel="shortcut icon" type="image/gif" href="rec.gif">
    
 <h1><center>BAR</center></h1>
-     <center><p>Falls ihr uns zusätzlich noch unterstützen wollt, bspw. durch Barschichten, Auf- und Abbau meldet Euch bei mir (Niklas).</p></center>
 
-
+    <center><p>Falls ihr uns zusätzlich noch unterstützen wollt, bspw. durch Barschichten, Auf- und Abbau meldet Euch bei mir (Niklas).</p></center>
+    
+    <div class="blink">
+       $$ Cash only $$
+    </div>
+    
+     <p class="subtitle"> <a href="index.html"> home</a> </p>
 
 <style>
       Body   {
@@ -33,6 +38,45 @@ min-height: 100vh;
                          
 
 }
+                .blink {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .blink {
+                
+                font-size: 2.25em;
+                -webkit-text-stroke: 1px;
+                color: #red;
+                line-height: 1rem;
+                animation: animate 3.5s linear infinite;
+                text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                animation-delay: calc(var(--i)*-0.50s)
+            }
+            
+            @keyframes animate
+            {
+                0%,10%
+                {
+                    color: aqua;
+                    filter: hue-rotate(0deg);
+                    
+                }
+                10.000001%
+                {
+                    color: #pink ;
+                    
+                }
+                100%
+                {
+                    color: #purple ;
+                    filter: hue-rotate(720deg);
+                }
+                
+            }
+        
     
     
 </style>
